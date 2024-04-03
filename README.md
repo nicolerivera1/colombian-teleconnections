@@ -27,12 +27,12 @@ We use complex network analysis, a new approach in climate science, to explore t
 
 The code allows us to analyze these teleconnections and their cascading effects, helping us understand how distant climate events can influence Colombian temperature and precipitation.
 
-You can reproduce our results or make your own analysis using this codes and building the appropiate folder structure to run the scripts.
+You can reproduce our results or make your analysis using these codes and build the appropriate folder structure to run the scripts.
 
 
 ## Usage
 
-To start using the colombian teleconnections code, follow these recommendations:
+To start using the Colombian teleconnections code, follow these recommendations:
 
 1. Clone the repository.
 
@@ -40,19 +40,19 @@ To start using the colombian teleconnections code, follow these recommendations:
    git clone https://github.com/nicolerivera1/colombian-teleconnections.git
    ```
 
-2. Download and give format the data you will use using the codes at inf-transference/get_climate_data. We recommend you to have a CS3 account to download the ERA5 datasets by running
+2. Download and format the data you will use using the codes at inf-transference/get_climate_data. We recommend you have a CS3 account to download the ERA5 datasets by running
 
     ```bash
     python cds_request.py
     ```
 
-for each variable of interest. Then download the NOAA indexes time series runing the notebook get_indexes_timeseries.ipynb and give it spatial structure by running 
+for each variable of interest. Then download the NOAA indexes time series run the notebook `get_indexes_timeseries.ipynb` and give it spatial structure by running
 
-    ```bash
-    bash enlarge_nc_indexes.sh
-    ```
+   ```bash
+   bash enlarge_nc_indexes.sh
+   ```
 
-and specify the source folder were you downloaded your NOAA timeseries and the destination folder were you will save the resulting nc files.
+and specify the source folder where you downloaded your NOAA time-series and the destination folder where you will save the resulting nc files.
 
 If you wish to cut the specific study area of our study run the bash file `select_colombia_grid.sh` for all your nc files. 
 
@@ -62,20 +62,20 @@ If you wish to cut the specific study area of our study run the bash file `selec
     bash loop_inf_transf_calculation.sh
     ```
 
-4. Build your adjacency matrices. Once you have the information tranference files, run
+4. Build your adjacency matrices. Once you have the information transference files, run
 
     ```bash
     python build_adjacency_matrix.py
     ```
 
-specifying your own threshold and paths. 
+specifying your threshold and paths. 
 
-5. Calculate the networks properties by runing the example codes at the network_analysis folder. 
+5. Calculate the network properties by running the example codes in the network_analysis folder. 
 
 
 ## Citation
 
-According to the MIT license, if you use any part of this code, please cite as
+According to the MIT license, if you use any part of this code, please cite it as:
 
 Rivera-Parra, N. (2024). Colombian teleconnections repository [Source code]. GitHub Repository. https://github.com/nicolerivera1/colombian-teleconnections
 
