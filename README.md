@@ -108,6 +108,6 @@ If you have any questions about contributing, feel free to open an Issue in the 
 
 This project would not have been possible without the invaluable support of:
 
-* My professors and thesis advisors, Isabel [Last Name] and Boris [Last Name], for their guidance and mentorship throughout this research.
+* My professors and thesis advisors, Isabel Hoyos and Boris Rodriguez, for their guidance and mentorship throughout this research.
 * The University of Antioquia for providing the academic environment and resources necessary for this work.
 * My loved ones, for their unwavering support and encouragement throughout this journey.
